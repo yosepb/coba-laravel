@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2 {{ Request::is('dashboard/posts') ? 'text-dark' : '' }}"
+                    <a class="nav-link d-flex align-items-center gap-2 {{ Request::is('dashboard/posts*') ? 'text-dark' : '' }}"
                         href="/dashboard/posts">
                         <svg class="bi">
                             <use xlink:href="#file-earmark" />
