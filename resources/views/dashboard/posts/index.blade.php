@@ -31,7 +31,7 @@
                         <td>
                             <a href="/dashboard/posts/{{ $post->slug }}" class="btn btn-info py-0 px-1"><i
                                     class="bi bi-eye"></i></a> |
-                            <a href="/dashboard/posts/{{ $post->id }}" class="btn btn-warning py-0 px-1"><i
+                            <a href="/dashboard/posts/{{ $post->slug }}/edit" class="btn btn-warning py-0 px-1"><i
                                     class="bi bi-pencil"></i></a> |
                             <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
                                 @method('delete')
