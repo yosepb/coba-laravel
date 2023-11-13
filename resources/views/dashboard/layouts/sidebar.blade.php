@@ -27,6 +27,22 @@
                     </a>
                 </li>
             </ul>
+
+            @can('admin')
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Administrator</span>
+                </h6>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2 {{ Request::is('dashboard/categories') ? 'text-dark' : '' }}"
+                            aria-current="page" href="/dashboard/categories">
+                            <i class="bi bi-grid-1x2-fill text-dark align-items-center"></i> <span
+                                class="align-items-center">Post Categories</span>
+                        </a>
+                    </li>
+                </ul>
+            @endcan
         </div>
     </div>
 </div>
